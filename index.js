@@ -19,36 +19,14 @@ class PersonInfo{
    this.$four = document.querySelector(".four");
 
    this.addEventListeners();
-  //  this.formComplete();
   }
 
   addEventListeners(){
     document.body.addEventListener('click', (event)=>{
      this.onclickHandler(event);
      event.preventDefault();
-
-    //  this.$email.addEventListener('input', ()=>{
-    //   this.emailValidation();
-    //  });
-
     });
   }
-
-  // emailValidation(){
-  //   const email = this.$email.value;
-  //   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/;
-  //   const isValidEmail = emailRegex.test(email);
-
-  //   if (isValidEmail) {
-  //     this.$errorMessageThree.style.display='none';
-  //     this.$errorThree.style.display = 'none';
-  //     this.$three.style.border = '1px solid black';
-  //   } else{
-  //     this.$errorMessageThree.style.display='inline';
-  //     this.$errorThree.style.display = 'inline';
-  //     this.$three.style.border = '1px solid #ff7979';
-  //   }
-  // }
 
   onclickHandler(event){
     const onclickBtn = this.$submitBtn.contains(event.target);
@@ -65,6 +43,7 @@ class PersonInfo{
    if(onclickBtn && (!firstNamameInfo == "" && !lastNameInfo == "" && !emailInfo == "" && !passwordInfo == "")){
     console.log('hi');
    }
+
    if (onclickBtn && (firstNamameInfo == "" && lastNameInfo == "" && emailInfo == "" && passwordInfo == "")){
     this.$errorMessageOne.style.display='inline'; 
     this.$errorMessageTwo.style.display='inline';
@@ -291,7 +270,7 @@ class PersonInfo{
     this.$one.style.border = '1px solid #ff7979';
     this.$two.style.border = '1px solid #ff7979';
     this.$three.style.border = '1px solid #ff7979';
-    // this.$four.style.border = '1px solid #ff7979';
+    this.$four.style.border = '1px solid #ff7979';
    } else if (onclickBtn && isValidEmail) {
     this.$errorMessageThree.style.display='none';
     this.$errorThree.style.display = 'none';
@@ -303,19 +282,7 @@ class PersonInfo{
    }
    
   }
-
-  // formComplete(){
-  //   const firstNamameInfo = this.$firstName.value;
-  //   const lastNameInfo = this.$lastName.value;
-  //   const emailInfo = this.$email.value;
-  //   const passwordInfo = this.$password.value;
-
-  //  if(!firstNamameInfo == '' || !lastNameInfo == ''){
-  //   console.log('hi')
-  //  }
-  // }
-
-  
 }
+
 
 const personInfo = new PersonInfo();
