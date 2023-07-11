@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <aside>
+      <h1>
+       Learn to code by watching others
+      </h1> 
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p> 
+    </aside>
+    <main>
+      <div class="free-trail-info"><strong>Try it free 7 days </strong>then $20/mo. thereafter</div>
+  
+      <form action="">
+        <div class="input-svg-div one">
+          <input type="text" placeholder="First Name" class="first-name">
+          <div class="svg-div error-one">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+        </div>
+        <div class="error-message invalid-first-name"><span>First Name cannot be empty</span></div>
+        <div class="input-svg-div two">
+          <input type="email" placeholder="Last Name " class="last-name">
+          <div class="svg-div error-two">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+        </div>
+        <div class="error-message invalid-last-name"><span>Last Name cannot be empty</span></div>
+        <div class="input-svg-div three">
+          <input type="text" placeholder="Email Address" class="email">
+          <div class="svg-div error-three">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+        </div>
+        <div class="error-message invalid-email"><span>Looks like this is not an email</span></div>
+        <div class="input-svg-div four">
+          <input type="password" placeholder="Password" class="password">
+          <div class="svg-div error-four">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>
+          </div>
+        </div>
+        <div class="error-message invalid-password"><span>Password cannot be empty</span></div>
+        <div class="submit-btn">
+          <button>Claim your free trial </button>
+        </div>
+        <div class="footer-text">
+          <p >By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p></div>
+      </form>
+      <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://www.frontendmentor.io/profile/golah-777">golah-777</a>.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
