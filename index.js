@@ -17,6 +17,9 @@ class PersonInfo{
    this.$two = document.querySelector(".two");
    this.$three = document.querySelector(".three");
    this.$four = document.querySelector(".four");
+   this.$main =document.querySelector('.overlay');
+   this.$nameSurname = document.getElementsByClassName("h1");
+   this.$message = document.querySelector(".message");
 
    this.addEventListeners();
   }
@@ -39,10 +42,17 @@ class PersonInfo{
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/;
     const isValidEmail = emailRegex.test(email);
 
-    
+    const minLength = 8;
+    const hasUpperCase = /[A-Z]/.test(passwordInfo);
+    const hasLowerCase = /[a-z]/.test(passwordInfo);
+    const hasNumber = /\d/.test(passwordInfo);
+    const hasSpecialChar = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/.test(passwordInfo); //to be continued
+
    if(onclickBtn && (!firstNamameInfo == "" && !lastNameInfo == "" && !emailInfo == "" && !passwordInfo == "")){
-    console.log('hi');
-   }
+    this.$main.style.visibility = 'hidden';
+    this.$message.style.display = 'inline';
+   } 
+
 
    if (onclickBtn && (firstNamameInfo == "" && lastNameInfo == "" && emailInfo == "" && passwordInfo == "")){
     this.$errorMessageOne.style.display='inline'; 
@@ -270,7 +280,7 @@ class PersonInfo{
     this.$one.style.border = '1px solid #ff7979';
     this.$two.style.border = '1px solid #ff7979';
     this.$three.style.border = '1px solid #ff7979';
-    this.$four.style.border = '1px solid #ff7979';
+    this.$four.style.border = '1px solid black';
    } else if (onclickBtn && isValidEmail) {
     this.$errorMessageThree.style.display='none';
     this.$errorThree.style.display = 'none';

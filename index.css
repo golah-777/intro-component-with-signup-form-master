@@ -29,6 +29,17 @@ body{
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
+ /* display: none; */
+}
+
+.message{
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
 }
 
 aside{
