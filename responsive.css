@@ -119,7 +119,7 @@
     text-align: left;
     width: 100%;
     /* margin: rem 0px; */
-    /* display: inline;  */
+    display: inline; /*note*/
   }
 }
 
@@ -243,6 +243,6 @@
     text-align: left;
     width: 100%;
     /* margin: rem 0px; */
-    /* display: inline; */
+    display: inline; /*note*/
   }
 }
