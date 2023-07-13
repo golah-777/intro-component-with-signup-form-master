@@ -119,8 +119,8 @@
     text-align: left;
     width: 100%;
     /* margin: rem 0px; */
-    display: inline; /*note*/
-  }
+    /* display: inline; */
+  }  
 }
 
 @media only screen and (min-width: 375px)and (max-width: 424px) {
@@ -243,6 +243,6 @@
     text-align: left;
     width: 100%;
     /* margin: rem 0px; */
-    display: inline; /*note*/
+    /* display: inline;  */
   }
 }
